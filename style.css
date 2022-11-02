@@ -539,16 +539,18 @@ main .bloc-bg-texture {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 /* Paragraph */
-.l-bloc .bloc-lg .row .text-center p{
-    font-weight:700;
-    font-size:23px;
-    text-decoration:none;
-    text-transform:none;
-    letter-spacing:1.7px;
-    column-count:1;
-    line-height:4.3em;
+.l-bloc .bloc-lg .row .text-center p {
+    font-weight: 700;
+    font-size: 23px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 1.7px;
+    column-count: 1;
+    line-height: 4.3em;
 }
+
 /* Paragraph */
 .bloc-md .voffset-lg .text-center p {
     transform: translatex(0px) translatey(0px);
@@ -713,4 +715,530 @@ main .bloc-bg-texture {
 .navbar-brand img {
     width: 100;
     height: 400;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: Sans-Serif;
+    margin: 0;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #232323;
+    color: #cdcdcd;
+    padding: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.menu-logo {
+    line-height: 0;
+    margin: 0 20px;
+}
+
+.menu-logo img {
+    max-height: 40px;
+    max-width: 100px;
+    flex-shrink: 0;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+.menu-container a:hover {
+    color: #00C6A7;
+}
+
+.menu-container input {
+    display: block;
+    width: 35px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/* Burger menu */
+.menu-container span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Navigation */
+header nav {
+    background-color: rgba(35, 35, 35, 0.1) !important;
+    height: 64px;
+    width: 580px !important;
+}
+
+
+
+
+
+
+.menu-container span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menu-container span:nth-child(3) {
+    transform-origin: 0% 100%;
+}
+
+.menu-container input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(3px, -1px);
+    background: #232323;
+}
+
+.menu-container input:checked~span:nth-child(4) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-container input:checked~span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 11px);
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 767px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu-logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu-logo img {
+        max-height: 30px;
+    }
+
+    .menu {
+        position: absolute;
+        box-sizing: border-box;
+        width: 300px;
+        right: -300px;
+        top: 0;
+        margin: -20px;
+        padding: 75px 50px 50px;
+        background: #cdcdcd;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translateX(0%);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    .menu-container input:checked~.menu {
+        transform: translateX(-100%);
+    }
+}
+
+/* desktop styles */
+
+/* Image */
+header img {
+    margin-left: 0px;
+    width: 888px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 135px;
+}
+
+/* Button */
+#cta-hero {
+    display: flex;
+    justify-content: center;
+}
+
+/* Text center */
+.bloc-bg-texture .bloc-lg .tight-width-whitespace .col-sm-12 .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text center */
+main .bloc-bg-texture .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+main .bloc-lg .btn-atomic-tangerine {
+    display: flex !important;
+}
+
+/* Col 12 */
+.bloc-sm .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-sm p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text center */
+.social .text-center {
+    width: 161px;
+}
+
+/* Paragraph */
+main .bgc-atomic-tangerine p {
+    flex-direction: column;
+}
+
+/* Paragraph */
+.bloc-md .voffset-lg .text-center p {
+    background-color: rgba(188, 188, 188, 0.09);
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-md .text-center p {
+    background-color: rgba(96, 96, 96, 0.09) !important;
+}
+
+/* Bloc */
+main .l-bloc .bloc-md {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Menu */
+header .menu {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (min-width:768px) {
+
+    /* Paragraph */
+    .bloc-sm p {
+        padding-right: 0px;
+    }
+
+}
+
+.menu-container a {
+    color: #cdcdcd;
+}
+
+.menu-container input {
+    display: none;
+}
+
+/* Burger menu */
+.menu-container span {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 20px;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Navigation */
+header nav {
+    background-color: rgba(35, 35, 35, 0.1) !important;
+    height: 64px;
+}
+
+@media (min-width:768px) {
+
+    /* Navigation */
+    header nav {
+        width: 580px !important;
+    }
+
+}
+
+header img {
+    margin-left: 0px;
+    width: 888px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 135px;
+}
+
+/* Image */
+header img {
+    margin-left: 0px;
+    width: 888px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 135px;
+}
+
+/* Button */
+#cta-hero {
+    display: flex;
+    justify-content: center;
+}
+
+/* Text center */
+.bloc-bg-texture .bloc-lg .tight-width-whitespace .col-sm-12 .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text center */
+main .bloc-bg-texture .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+main .bloc-lg .btn-atomic-tangerine {
+    display: flex !important;
+}
+
+/* Col 12 */
+.bloc-sm .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-sm p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text center */
+.social .text-center {
+    width: 161px;
+}
+
+/* Paragraph */
+main .bgc-atomic-tangerine p {
+    flex-direction: column;
+}
+
+/* Paragraph */
+.bloc-md .voffset-lg .text-center p {
+    background-color: rgba(188, 188, 188, 0.09);
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-md .text-center p {
+    background-color: rgba(96, 96, 96, 0.09) !important;
+}
+
+/* Bloc */
+main .l-bloc .bloc-md {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Menu */
+header .menu {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (min-width:768px) {
+
+    /* Paragraph */
+    .bloc-sm p {
+        padding-right: 0px;
+    }
+
+}
+
+/* Image */
+header img {
+    margin-left: 0px;
+    width: 888px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 135px;
+}
+
+/* Button */
+#cta-hero {
+    display: flex;
+    justify-content: center;
+}
+
+/* Text center */
+.bloc-bg-texture .bloc-lg .tight-width-whitespace .col-sm-12 .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text center */
+main .bloc-bg-texture .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+main .bloc-lg .btn-atomic-tangerine {
+    display: flex !important;
+}
+
+/* Col 12 */
+.bloc-sm .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-sm p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text center */
+.social .text-center {
+    width: 161px;
+}
+
+/* Paragraph */
+main .bgc-atomic-tangerine p {
+    flex-direction: column;
+}
+
+/* Paragraph */
+.bloc-md .voffset-lg .text-center p {
+    background-color: rgba(188, 188, 188, 0.09);
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-md .text-center p {
+    background-color: rgba(96, 96, 96, 0.09) !important;
+}
+
+/* Bloc */
+main .l-bloc .bloc-md {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Menu */
+header .menu {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Header */
+header {
+    display: flex;
+}
+
+@media (min-width:768px) {
+
+    /* Paragraph */
+    .bloc-sm p {
+        padding-right: 0px;
+    }
+
+    /* Navigation */
+    header nav {
+        width: 100% !important;
+    }
+
+}
+
+/* Navigation */
+header nav {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    color: #000000 !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 117px !important;
+    border-width: 0px;
+}
+
+/* Menu */
+header .menu {
+    background-color: #ffffff;
+    height: 165px;
 }
