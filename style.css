@@ -457,6 +457,114 @@ h1 {
     background-image: url("img/image-de-presentation.webp")
 }
 
+/* Navbar supported content */
+#navbarSupportedContent {
+    color: #ffffff;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Link */
+.navbar-nav .nav-item a {
+    color: #ffffff !important;
+    font-size: 18px;
+}
+
+/* Container fluid */
+header .container-fluid {
+    transform: translatex(0px) translatey(0px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Navigation */
+header .container-fluid nav {
+    background-color: #f39c12 !important;
+}
+
+/* Navigation */
+header nav {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+/* Heading */
+.bloc-md .voffset-lg .mg-md {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Heading */
+main .l-bloc .bloc-lg .mg-md {
+    transform: translatex(0px) translatey(0px);
+    font-weight: 600;
+}
+
+/* Text center */
+main .bloc-bg-texture .text-center {
+    color: #f39c12 !important;
+    font-weight: 600;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Button */
+main .bloc-lg .btn-atomic-tangerine {
+    color: #f39c12 !important;
+    background-color: #ffffff;
+    width: 163px;
+    height: 35px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Bloc texture */
+main .bloc-bg-texture {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.bloc-md .text-center p {
+    border-color: #f39c12;
+    border-style: solid;
+    border-width: 3px;
+    background-color: rgba(243, 156, 18, 0.09);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Paragraph */
+.l-bloc .bloc-lg .row .text-center p{
+    font-weight:700;
+    font-size:23px;
+    text-decoration:none;
+    text-transform:none;
+    letter-spacing:1.7px;
+    column-count:1;
+    line-height:4.3em;
+}
+/* Paragraph */
+.bloc-md .voffset-lg .text-center p {
+    transform: translatex(0px) translatey(0px);
+    font-style: italic;
+}
+
+@media (min-width:768px) {
+
+    /* Paragraph */
+    .bloc-md .text-center p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
