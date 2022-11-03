@@ -220,7 +220,7 @@ a:hover {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #FFF;
+    color: rgb(166, 165, 165);
     background: rgba(0, 0, 0, .3)
 }
 
@@ -372,7 +372,7 @@ h1 {
 }
 
 .white {
-    color: #ffffff !important
+    color: #000000 !important
 }
 
 .portfolio-thumb {
@@ -412,12 +412,12 @@ h1 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF !important
+    color: #000000 !important
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956 !important;
-    color: #FFFFFF !important
+    color: #cd7b07 !important
 }
 
 .container {
@@ -429,7 +429,7 @@ h1 {
 }
 
 .ltc-white {
-    color: #ffffff !important
+    color: #000000 !important
 }
 
 .bg-dots-bg {
@@ -437,7 +437,7 @@ h1 {
 }
 
 .ltc-white:hover {
-    color: #cccccc !important
+    color: #cb7700 !important
 }
 
 .icon-dark-slate-blue {
@@ -504,7 +504,7 @@ main .l-bloc .bloc-lg .mg-md {
 
 /* Text center */
 main .bloc-bg-texture .text-center {
-    color: #f39c12 !important;
+    color: #000000 !important;
     font-weight: 600;
     transform: translatex(0px) translatey(0px);
 }
@@ -539,16 +539,18 @@ main .bloc-bg-texture {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 /* Paragraph */
-.l-bloc .bloc-lg .row .text-center p{
-    font-weight:700;
-    font-size:23px;
-    text-decoration:none;
-    text-transform:none;
-    letter-spacing:1.7px;
-    column-count:1;
-    line-height:4.3em;
+.l-bloc .bloc-lg .row .text-center p {
+    font-weight: 700;
+    font-size: 23px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 1.7px;
+    column-count: 1;
+    line-height: 4.3em;
 }
+
 /* Paragraph */
 .bloc-md .voffset-lg .text-center p {
     transform: translatex(0px) translatey(0px);
@@ -713,4 +715,116 @@ main .bloc-bg-texture {
 .navbar-brand img {
     width: 100;
     height: 400;
+}
+
+.row voffset-lg voffset {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+header .container-fluid {
+    /* transform: translatex(0px) translatey(0px); */
+    display: flex;
+    align-items: center;
+    max-width: 1320px;
+    column-gap: 672px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+main .bloc-bg-texture .text-center {
+    color: #ff8d00 !important;
+    font-weight: 600;
+    transform: translatex(0px) translatey(0px);
+}
+
+main .bloc-lg .btn-atomic-tangerine {
+    color: #000000 !important;
+    background-color: #ffffff;
+    width: 163px;
+    height: 54px;
+    display: inline-block;
+    justify-content: center;
+    font-size: 28px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Heading */
+#navbarSupportedContent .navbar-nav>h2 {
+    min-height: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+}
+
+/* Nav item */
+#navbarSupportedContent .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    width: 97px;
+}
+
+/* Dropdown toggle */
+.navbar-nav .nav-item .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px !important;
+    overflow: hidden;
+    transform: translatey(-2px);
+}
+
+/* Link */
+.navbar-nav h2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nav link */
+.navbar-nav .nav-item .nav-link {
+    height: 62px;
+}
+
+/* Navigation */
+header nav {
+    align-self: center;
+    justify-content: space-around !important;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Navigation */
+header .container-fluid nav {
+    width: 1250px !important;
+}
+
+/* Container fluid */
+header .container-fluid {
+    transform: translatex(0px) translatey(0px);
+    width: 3300px !important;
+    padding-right: 0px;
+    margin-right: 935px;
+}
+
+/* List Item */
+.navbar-nav h2 li {
+    transform: translatex(3px) translatey(1px);
+}
+
+/* Atomic tangerine */
+main .bgc-atomic-tangerine {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Row */
+main .bgc-atomic-tangerine .tight-width-whitespace {
+    background-color: rgba(96, 56, 10, 0.647);
+}
+
+/* Link */
+main .bgc-atomic-tangerine a {
+    color: #f39c12 !important;
 }
