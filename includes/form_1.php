@@ -21,5 +21,4 @@
 	
 	mail($to,$email_subject,$email_body,$headers); // Post message
 	return true;			
-	$settings['block_interest_cohort'] = FALSE;
 ?>
