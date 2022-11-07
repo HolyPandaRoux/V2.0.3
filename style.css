@@ -1040,3 +1040,6 @@ h4 {
         text-align: center;
     }
 }
+#bloc-1-hero > div > div > div > img{
+    border-radius: 40px;
+}
