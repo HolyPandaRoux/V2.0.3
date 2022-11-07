@@ -1104,3 +1104,39 @@ h4 {
     }
     
    }
+
+   /* Email */
+#email{
+    position:relative;
+    border-color:#672222;
+   }
+   
+   /* Form group */
+   #form_1 .form-group{
+    display:flex;
+    justify-content:space-between;
+    height:33px;
+    margin-bottom:18px;
+   }
+   
+   /* Message */
+   #message{
+    height:45px;
+    border-color:#672222;
+    border-width:2px;
+   }
+   
+   /* Name */
+   #name{
+    border-style:solid;
+    border-color:#672222;
+   }
+   
+   /* Input */
+   #form_1 .form-group input[type=email]{
+    border-color:#672222;
+   }
+   
+   #bloc-8 > div > div > div > p{
+    color:#000000!important;
+   }
