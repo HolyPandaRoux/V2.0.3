@@ -822,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("./img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -1043,3 +1043,64 @@ h4 {
 #bloc-1-hero > div > div > div > img{
     border-radius: 40px;
 }
+/* Bloc */
+.page-container .bloc-bg-texture .bloc-lg{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   }
+   
+   /* Bloc */
+   .page-container .l-bloc .bloc-sm{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   }
+   
+   /* Bloc */
+   .page-container .l-bloc .bloc-md{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+   }
+   
+   /* Bloc */
+   .page-container .l-bloc .bloc-lg{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+   }
+   
+   /* Col 12 */
+   .page-container .bloc-sm .col-sm-12{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+   }
+   
+/* Bloc */
+.page-container .l-bloc .bloc-sm{
+    height:143px;
+   }
+   
+   /* Image */
+   .navbar-header a img{
+    display:inline-block;
+   }
+   
+   /* Image */
+   .page-container .l-bloc .bloc-sm .navbar .navbar-header a img{
+    transform:translatex(-226px) translatey(-34px) !important;
+   }
+   
+   @media (min-width:768px){
+   
+    /* Menu */
+    .navbar .special-dropdown-nav ul{
+     transform:translatex(214px) translatey(-39px);
+    }
+    
+   }
