@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "touchswipe": "^1.6.0"
+  }
+}
