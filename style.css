@@ -1221,17 +1221,32 @@ h4 {
     }
 
 }
-@media (max-width:767px){
+
+@media (max-width:767px) {
 
     /* Image */
-    .page-container .l-bloc .bloc-sm .navbar .navbar-header a img{
-     transform:translatex(-22px) translatey(5px) !important;
-     height:248px !important;
+    .page-container .l-bloc .bloc-sm .navbar .navbar-header a img {
+        transform: translatex(-22px) translatey(5px) !important;
+        height: 248px !important;
     }
-    
+
     /* Image */
-    .navbar-header a img{
-     width:231px;
+    .navbar-header a img {
+        width: 231px;
     }
-    
-   }
+
+}
+
+@media (max-width:400px) {
+
+    /* Nav toggle */
+    #nav-toggle {
+        transform: translatex(-77px) translatey(6px);
+    }
+
+    /* Image */
+    .page-container .l-bloc .bloc-sm .navbar .navbar-header a img {
+        transform: translatex(0px) translatey(9px) !important;
+    }
+
+}
