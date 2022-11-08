@@ -1221,3 +1221,17 @@ h4 {
     }
 
 }
+@media (max-width:767px){
+
+    /* Image */
+    .page-container .l-bloc .bloc-sm .navbar .navbar-header a img{
+     transform:translatex(-22px) translatey(5px) !important;
+     height:248px !important;
+    }
+    
+    /* Image */
+    .navbar-header a img{
+     width:231px;
+    }
+    
+   }
