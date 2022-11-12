@@ -1201,7 +1201,7 @@ h4 {
 
     /* Link */
     .page-container .l-bloc .bloc-sm .navbar .special-dropdown-nav .site-navigation li a {
-        transform: translatex(-165px) translatey(4px) !important;
+        transform: translatex(15px) translatey(4px) !important;
     }
 
     /* Link */
@@ -1258,3 +1258,25 @@ h4 {
 .italique{
     font-style: italic;
 }
+
+.page-container .l-bloc .bloc-sm{
+    height:160px;
+   }
+   
+   @media (min-width:768px){
+
+    /* Image */
+    .navbar-header a img{
+     height:79px;
+    }
+    
+   }
+   
+   @media (min-width:992px){
+   
+    /* Image */
+    .page-container .l-bloc .bloc-sm .navbar .navbar-header a img{
+     transform:translatex(-227px) translatey(-5px) !important;
+    }
+    
+   }
